@@ -1,0 +1,14 @@
+<%- include("partials/header") %>
+
+<h1>Home</h1>
+
+<p> <%= home %> </p>
+
+<% postlu.forEach(function(i){ %>
+<h1><%= i.Title %></h1>
+<p><%= i.Content.substring(0,100) + "..." %><a href="/post/<%= i.Title %>">ReadMe</a> %></p>
+<% }) %>
+
+
+
+<%- include("partials/footer") %>
